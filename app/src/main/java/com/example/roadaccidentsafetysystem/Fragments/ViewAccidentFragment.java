@@ -98,8 +98,6 @@ public class ViewAccidentFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         viewAccidentRv.setLayoutManager(layoutManager);
 
-
-
         FirebaseDatabase.getInstance().getReference("Accidents")
                 .addValueEventListener(new ValueEventListener() {
                     @Override

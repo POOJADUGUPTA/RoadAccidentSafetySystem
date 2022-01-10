@@ -6,9 +6,113 @@
     tools:context=".Fragments.AboutUsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="About Us"
+                android:textColor="@color/purple_500"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="It includes new thinking on road safety and offers a clear argument on why adopting a Safe System approach is crucial for all countries."
+                android:textColor="@color/colorRed"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text=" Despite being a major public health issue that affects the most vulnerable and also the most productive sections of society, road safety has not received the attention it deserves."
+                android:textColor="@color/colorRed"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Growth in population has led to growth in technology. People use car on large number and number of accidents taking place, is increasing day-by-day. Road accidents are undoubtedly the most frequent happening cases and overall, the cause of the most damage. Hence there is a need of many road safety systems. To avoid these problems , Road Safety System projects has proposed this accident prevention system."
+                android:textColor="@color/colorRed"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text3"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="We also take an input of time, date, severity, number of vehicles involved, So we can run the important queries like in which particular time the most of the accident occurs, average severity of accidents in one month etc.
+We can also take the reasons of accident from users to deduce the reason for that area to be accident prone and we can also inform the respective authorities so that necessary steps should be taken."
+                android:textColor="@color/colorRed"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/admin_person_bg" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="This App was made as a project of TYBSC CS in final year by \n \n POOJA GUPTA"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
 
 </FrameLayout>

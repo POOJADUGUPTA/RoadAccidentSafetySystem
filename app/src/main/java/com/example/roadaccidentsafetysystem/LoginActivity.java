@@ -355,60 +355,6 @@ public class LoginActivity extends AppCompatActivity {
         registerRl.setVisibility(View.VISIBLE);
     }
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-//    private void makeMeOnline() {
-//        pd.setMessage("Checking User");
-//        HashMap<String, Object> hashMap = new HashMap<>();
-//        hashMap.put("online", "true");
-//
-//        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
-//        ref.child(firebaseAuth.getUid()).updateChildren(hashMap)
-//                .addOnSuccessListener(new OnSuccessListener<Void>() {
-//                    @Override
-//                    public void onSuccess(Void aVoid) {
-//                        checkUserType();
-//                    }
-//                })
-//                .addOnFailureListener(new OnFailureListener() {
-//                    @Override
-//                    public void onFailure(@NonNull Exception e) {
-//                        pd.dismiss();
-//                        Toast.makeText(LoginActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
-//                    }
-//                });
-//    }
-
-//    private void checkUserType() {
-//
-//        DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
-//        ref.orderByChild("uid").equalTo(firebaseAuth.getUid())
-//                .addValueEventListener(new ValueEventListener() {
-//                    @Override
-//                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                        for (DataSnapshot ds : snapshot.getChildren()){
-//                            String accountTye = ""+ds.child("accountTye").getValue();
-//                            if (accountTye.equals("Admin")){
-//                                pd.dismiss();
-//                                startActivity(new Intent(LoginActivity.this, AdminDashboardActivity.class));
-//                                finish();
-//                            }
-//                            else {
-//                                pd.dismiss();
-//                                startActivity(new Intent(LoginActivity.this, DashboardUserActivity.class));
-//                                finish();
-//                            }
-//                        }
-//                    }
-//
-//                    @Override
-//                    public void onCancelled(@NonNull DatabaseError error) {
-//
-//                    }
-//                });
-//
-//    }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
